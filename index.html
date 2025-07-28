@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Netflix</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    .navbar img {
+      width: 120px;
+    }
+
+    .row {
+      margin-left: 20px;
+    }
+
+    .row h2 {
+      margin: 20px 0;
+    }
+
+    .row__posters {
+      display: flex;
+      overflow-x: scroll;
+      padding: 20px 0;
+    }
+
+    .row__posters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .row__poster {
+      max-height: 200px;
+      object-fit: cover;
+      margin-right: 10px;
+      transition: transform 0.2s;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .row__poster:hover {
+      transform: scale(1.1);
+    }
+
+    .row__posterLarge {
+      max-height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix" />
+  </div>
+
+  <div class="row">
+    <h2>Trending Now</h2>
+    <div class="row__posters">
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg" alt="movie1" />
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/5P8SmMzSNYikXpxil6BYzJ16611.jpg" alt="movie2" />
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/hZIq9rH7OaNd5jXZ1M88NQ2HeY0.jpg" alt="movie3" />
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="movie4" />
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/czembW0Rk1Ke7lCJGahbOhdCuhV.jpg" alt="movie5" />
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg" alt="movie6" />
+      <img class="row__poster" src="https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg" alt="movie7" />
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Top Rated</h2>
+    <div class="row__posters">
+      <img class="row__poster row__posterLarge" src="https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg" alt="top1" />
+      <img class="row__poster row__posterLarge" src="https://image.tmdb.org/t/p/w500/9O1Iy9od7KIfKr3z1DQx1zGMtvb.jpg" alt="top2" />
+      <img class="row__poster row__posterLarge" src="https://image.tmdb.org/t/p/w500/yPisjyLweCl1tbgwgtzBCNCBle.jpg" alt="top3" />
+      <img class="row__poster row__posterLarge" src="https://image.tmdb.org/t/p/w500/pdJv74uE4IgO4PzVG3Y6nqovRTj.jpg" alt="top4" />
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Telugu Blockbusters</h2>
+    <div class="row__posters">
+      <img class="row__poster" src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg" alt="RRR" />
+      <img class="row__poster" src="https://upload.wikimedia.org/wikipedia/en/2/22/Titanic_poster.jpg" alt="Titanic" />
+      <img class="row__poster" src="https://upload.wikimedia.org/wikipedia/en/e/ee/RX_100_poster.jpg" alt="RX 100" />
+      <img class="row__poster" src="https://upload.wikimedia.org/wikipedia/en/f/fb/Animal_film_poster.jpg" alt="Animal" />
+      <img class="row__poster" src="https://upload.wikimedia.org/wikipedia/en/6/63/Arjun_Reddy.jpg" alt="Arjun Reddy" />
+      <img class="row__poster" src="https://upload.wikimedia.org/wikipedia/en/c/c3/Sye_Raa_Narasimha_Reddy_poster.jpg" alt="Sye Raa" />
+    </div>
+  </div>
+
+</body>
+</html>
